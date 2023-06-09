@@ -1,0 +1,965 @@
+*{
+    padding: 0px 0px;
+    margin: 0px 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://66.media.tumblr.com/59d9990a0adcb19e9f687a47953226b3/tumblr_ouztgbH0CG1vj8v9mo4_1280.png");
+}
+#parent{
+    position: relative;
+    /* height: 100vh; */
+
+}
+#wall{
+    height: 100vh;
+  
+    z-index: 3;
+}
+
+
+
+
+#window{
+    position: absolute;
+    border:8px solid rgb(140, 20, 20);
+    height: 36%;
+    width: 20%;
+    left: 10%;
+    top: 10%;
+    background-image: url("https://th.bing.com/th/id/OIP.CS3sObP5sJgbYxKnTFlG_gHaE6?pid=ImgDet&rs=1");
+    animation: windowback 15s linear infinite;
+    z-index: 3;
+}
+@keyframes windowback{
+       0%{
+        background-image: url("https://th.bing.com/th/id/OIP.CS3sObP5sJgbYxKnTFlG_gHaE6?pid=ImgDet&rs=1");
+        }
+        20%{
+            background-image: url("https://th.bing.com/th/id/OIP.CS3sObP5sJgbYxKnTFlG_gHaE6?pid=ImgDet&rs=1");  
+        }
+        40%{
+            background-image: url("https://th.bing.com/th/id/OIP.CS3sObP5sJgbYxKnTFlG_gHaE6?pid=ImgDet&rs=1");
+        }
+        60%{
+           
+            background-image: url("https://th.bing.com/th/id/OIP.CS3sObP5sJgbYxKnTFlG_gHaE6?pid=ImgDet&rs=1");
+        }
+        80%{
+            background-image: url("https://th.bing.com/th?id=OIP.5_scgQsxXDgHACnKMUzYnQHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"); 
+        }
+        100%{
+            background-image: url("https://th.bing.com/th?id=OIP.5_scgQsxXDgHACnKMUzYnQHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"); 
+            
+        }
+}
+#divider{
+    width: 3px;
+    height: 100%;
+    border: 2px solid rgb(140, 20, 20);
+    position: absolute;
+    left: 50%;
+    z-index: 5;
+}
+#dividertwo{
+    width: 100%;
+    height: 3px;
+    border: 2px solid rgb(140, 20, 20);
+    position: absolute;
+    top: 50%;
+   
+}
+.sun{
+    position: absolute;
+    top: 10%;
+    background-color: rgb(185, 149, 40);
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow:  rgb(185, 149, 40) 10px 50px 90px 20px;
+    animation: cloud 15s linear infinite;
+}
+
+@keyframes cloud{
+    0%{
+    transform: translateX(100%);
+       background-color: rgb(185, 149, 40);
+       transform: translateY(10px);
+       
+    }
+    20%{
+        transform: translateX(200%);
+        background-color: rgb(185, 149, 40);
+    }
+    40%{
+        transform: translateX(400%);
+        background-color: rgb(152, 98, 12);
+        box-shadow:  rgb(152, 98, 12) 10px 50px 90px 20px;
+    }
+    60%{
+        transform: translateX(550%);
+        background-color: rgb(152, 98, 12);
+        box-shadow:  rgb(152, 98, 12) 10px 50px 90px 20px;
+
+    }
+    80%{
+        transform: translateX(700%);
+        background-color: rgb(163, 158, 158);
+    }
+    100%{
+        transform: translateX(899%);
+        background-color: white;
+        
+    }
+
+}
+
+#pot{
+    position: absolute;
+    -webkit-clip-path: polygon(0 0, 100% 0, 84% 100%, 16% 100%);
+    clip-path: polygon(0 0, 100% 0, 84% 100%, 16% 100%);
+border: 2px solid white;
+background-color: rgb(149, 165, 42);
+width: 19%;
+height: 18%;
+bottom: 0px;
+left: 5%;
+}
+.flower{
+    position: absolute;
+    clip-path: polygon(41% 0, 53% 0, 86% 32%, 92% 69%, 63% 100%, 35% 100%, 6% 71%, 12% 31%);
+    background-color: green;
+width: 8%;
+height: 10%;
+bottom: 14%;
+left: 10%;
+animation: flowerani 15s linear infinite;
+
+}
+@keyframes flowerani{
+    0%{
+        clip-path: polygon(45% 11%, 56% 11%, 62% 100%, 41% 100%);
+        background-color: green;  
+     }
+     20%{
+        clip-path: polygon(45% 11%, 56% 11%, 62% 100%, 41% 100%);
+        background-color: green;  
+     }
+     40%{
+        clip-path: polygon(45% 11%, 56% 11%, 62% 100%, 41% 100%);
+        background-color: green;  
+     }
+     60%{
+        clip-path: polygon(45% 11%, 56% 11%, 62% 100%, 41% 100%);
+        background-color: green;  
+        height: 35%;
+     }
+     80%{
+        clip-path: polygon(45% 11%, 56% 11%, 62% 100%, 41% 100%);
+        background-color: green;  
+        height: 29%; 
+     }
+     100%{
+        clip-path: polygon(45% 11%, 56% 11%, 62% 100%, 41% 100%);
+        background-color: brown;  
+        height: 15%; 
+     }
+}
+
+.leavesone{
+    position: absolute;
+    /* clip-path: polygon(41% 0, 53% 0, 86% 32%, 92% 69%, 63% 100%, 35% 100%, 6% 71%, 12% 31%); */
+    background-color: green;
+width: 6%;
+height: 10%;
+bottom: 14%;
+left: 10%;
+animation: flowerleaves 15s linear infinite;
+}
+.leavesone{
+    position: absolute;
+    /* clip-path: polygon(41% 0, 53% 0, 86% 32%, 92% 69%, 63% 100%, 35% 100%, 6% 71%, 12% 31%); */
+    background-color: green;
+width: 6%;
+height: 10%;
+bottom: 14%;
+left: 11%;
+animation: flowerleaves 15s linear infinite;
+}
+.leavestwo{
+    position: absolute;
+    /* clip-path: polygon(41% 0, 53% 0, 86% 32%, 92% 69%, 63% 100%, 35% 100%, 6% 71%, 12% 31%); */
+    background-color: green;
+width: 6%;
+height: 10%;
+bottom: 14%;
+left: 13%;
+animation: flowerleaves 15s linear infinite;
+}
+@keyframes flowerleaves{
+    0%{
+        clip-path: polygon(41% 0, 53% 0, 86% 32%, 92% 69%, 63% 100%, 35% 100%, 6% 71%, 12% 31%);
+     }
+     20%{
+        clip-path: polygon(41% 0, 53% 0, 86% 32%, 92% 69%, 63% 100%, 35% 100%, 6% 71%, 12% 31%);
+        background-color: greenyellow;  
+     }
+     40%{
+        background-color: greenyellow; 
+     }
+     60%{
+        background-color: transparent;  
+     }
+     80%{
+        background-color: transparent;
+     }
+     100%{
+        background-color: transparent;  
+     }
+}
+
+.bud{
+    position: absolute;
+    height: 4%;
+    width: 4%;
+    transform: translateY(-50px);
+    
+    -webkit-clip-path: circle(50% at 50% 50%);
+clip-path: circle(50% at 50% 50%);
+    border: 2px solid rgb(104, 165, 104);
+    background-color: rgb(104, 165, 104) ;
+    bottom: 0%;
+left: 12%;
+animation: budani 15s linear infinite;
+}
+@keyframes budani{
+    0%{
+        transform: translateY(-45px);
+        border: 2px solid rgb(104, 165, 104);
+        background-color: rgb(104, 165, 104) ; 
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%); 
+        height: 4%;
+    width: 4%;
+    left: 12%;
+     }
+     20%{
+        transform: translateY(-70px);
+        background-color: rgb(116, 19, 19);
+        border: 2px solid rgb(116, 19, 19);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        height: 5%;
+    width: 5%;
+    left: 12%;
+     }
+     40%{
+        transform: translateY(-95px);
+        -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        background-color: rgb(116, 19, 19);
+        border: 2px solid rgb(116, 19, 19); 
+        height: 6%;
+    width: 6%;  
+    left: 11%;
+     }
+     60%{
+        transform: translateY(-105px);
+        -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        background-color: yellow;
+        border: 2px solid yellow;
+        height: 8%;
+    width: 8%;
+    left: 10%;
+     }
+     80%{
+        transform: translateY(-90px);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        background-color: brown;
+        border: 2px solid brown;
+        height: 4%;
+    width: 4%;  
+    left: 12%;
+     }
+     100%{
+        transform: translateY(-70px);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        background-color: brown;
+        border: 2px solid brown;  
+        height: 4%;
+    width: 4%;
+    left: 12%;
+     }
+   
+}
+
+
+
+#maincontainer{
+    position:relative;
+    /* border:2px solid brown; */
+    height:630px;
+    width:65%;
+    left:34%;
+    top:20%;
+   
+}
+
+#tv{
+    position: absolute;
+    border-right:18px solid black;
+    border-left:18px solid black;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+
+    height: 38%;
+    width: 40%;
+    right: 0%;
+    top: 5%;
+    background-image: url("https://free4kwallpapers.com/uploads/originals/2015/08/24/blue-sky-background.jpg");
+   
+    z-index: 3;  
+    animation: tvsound 3s linear infinite;
+}
+@keyframes tvsound{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#network{
+    position: absolute;
+    top:-165px;
+    right: 17%;
+    -webkit-clip-path: polygon(100% 26%, 100% 30%, 10% 76%, 0 76%);
+    clip-path: polygon(100% 26%, 100% 30%, 10% 76%, 0 76%);    
+    transform: rotateX(50deg);    
+background-color: black;
+border: 7px solid black;
+height: 300px;
+width: 20px;
+
+}
+#networktwo{
+    position: absolute;
+    top:-183px;
+    right: 23%;
+    -webkit-clip-path: polygon(100% 26%, 100% 30%, 10% 76%, 0 76%);
+    clip-path: polygon(100% 26%, 100% 30%, 10% 76%, 0 76%);    
+    transform: rotateX(120deg);    
+background-color: black;
+border: 7px solid black;
+height: 350px;
+width: 20px;   
+}
+#grass{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+.budtv{
+    position: absolute;
+    height: 5%;
+    width: 4%;
+    transform: translateY(-50px);
+    
+    -webkit-clip-path: circle(50% at 50% 50%);
+clip-path: circle(50% at 50% 50%);
+    border: 2px solid rgb(104, 165, 104);
+    background-color: rgb(104, 165, 104) ;
+    bottom: -5%;
+left: 12%;
+animation: budtvani 15s linear infinite;
+}
+
+@keyframes budtvani{
+    0%{
+        transform: translateY(-45px);
+        border: 2px solid rgb(104, 165, 104);
+        background-color: rgb(104, 165, 104) ; 
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%); 
+        height: 4%;
+    width: 4%;
+    left: 12%;
+     }
+     20%{
+        transform: translateY(-70px);
+        background-color: rgb(116, 19, 19);
+        border: 2px solid rgb(116, 19, 19);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        height: 5%;
+    width: 5%;
+    left: 12%;
+     }
+     40%{
+        transform: translateY(-95px);
+        -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        background-color: rgb(116, 19, 19);
+        border: 2px solid rgb(116, 19, 19); 
+        height: 6%;
+    width: 6%;  
+    left: 11%;
+     }
+     60%{
+        transform: translateY(-105px);
+        -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        background-color: yellow;
+        border: 2px solid yellow;
+        height: 8%;
+    width: 8%;
+    left: 10%;
+     }
+     80%{
+        transform: translateY(-90px);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        background-color: brown;
+        border: 2px solid brown;
+        height: 4%;
+    width: 4%;  
+    left: 12%;
+     }
+     100%{
+        transform: translateY(-70px);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        background-color: brown;
+        border: 2px solid brown;  
+        height: 4%;
+    width: 4%;
+    left: 12%;
+     }
+   
+}
+
+.suntv{
+    position: absolute;
+    top: 10%;
+    background-color: rgb(185, 149, 40);
+    height: 12%;
+    width: 10%;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow:  rgb(185, 149, 40) 10px 50px 90px 20px;
+    animation: tvsound 3s linear infinite;
+    right: 20%;
+}
+#cloud{
+    font-size: 40px; 
+    position: absolute;
+    top:10%;
+    left: 10%;
+    animation: cloudani 12s linear infinite;
+}
+
+@keyframes cloudani{
+    0%{
+        transform: translateX(-20%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-20%);
+    }
+}
+
+#chair{
+    position: absolute;
+    -webkit-clip-path: polygon(15% 9%, 27% 61%, 100% 63%, 79% 100%, 20% 100%, 0 7%);
+    clip-path: polygon(15% 9%, 27% 61%, 100% 63%, 79% 100%, 20% 100%, 0 7%);
+height: 200px;
+width: 200px;
+background-color: grey;
+bottom: 90px;
+left: 70px ;
+}
+
+#legone{
+    position: absolute;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 56% 100%, 42% 100%);
+clip-path: polygon(20% 0%, 80% 0%, 56% 100%, 42% 100%);
+height: 70px;
+width: 25px;
+background-color: grey;
+bottom: 30px;
+left: 170px;
+
+}
+
+#legtwo{
+    position: absolute;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 56% 100%, 42% 100%);
+clip-path: polygon(20% 0%, 80% 0%, 56% 100%, 42% 100%);
+height: 70px;
+width: 25px;
+background-color: grey;
+bottom: 30px;
+left: 200px;  
+}
+
+#legthree{
+    position: absolute;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 56% 100%, 42% 100%);
+clip-path: polygon(20% 0%, 80% 0%, 56% 100%, 42% 100%);
+height: 70px;
+width: 25px;
+background-color: grey;
+bottom: 30px;
+left: 110px;   
+}
+
+#legfour{
+    position: absolute;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 56% 100%, 42% 100%);
+clip-path: polygon(20% 0%, 80% 0%, 56% 100%, 42% 100%);
+height: 70px;
+width: 25px;
+background-color: grey;
+bottom: 30px;
+left: 140px;   
+}
+
+#human{
+    position: absolute;
+    border-right: 2px solid #d7ba81;
+    background: linear-gradient(to bottom right,brown 10%,#d7ba81 80%);
+    height: 12%;
+    width: 8%;
+    border-radius: 50% 50% 30% 20%;
+    bottom: 49.5%;
+    left: 7.5%;
+    transform: rotate(-15deg);
+}
+
+#neck{
+    position: relative;
+    top:50.5%;
+    left: 10%;
+    height: 4%;
+    width: 3%;
+    border: 2px solid #d7ba81;
+    background-color: #d7ba81;
+    transform: rotate(-15deg);
+}
+#body{
+    position: relative;
+    top:49%;
+    left: 11.5%; 
+    height: 19%;
+    width: 8%;
+    border: 2px solid rgb(175, 227, 85);
+    background-color: rgb(175, 227, 85);
+    border-radius: 0% 70% 0% 0%;  
+    transform: rotate(-14deg);
+}
+#thai{
+    -webkit-clip-path: polygon(34% 0, 100% 0%, 75% 100%, 11% 100%);
+    clip-path: polygon(34% 0, 100% 0%, 75% 100%, 11% 100%);
+    position: relative;
+    background-color: skyblue;
+    width: 21.5%;
+    height: 5%;
+    top: 46%;
+    left: 10.5%;
+    transform: rotate(2deg);
+    
+}
+
+#leg{
+    position: absolute;
+    -webkit-clip-path: polygon(43% 10%, 57% 0, 69% 100%, 54% 100%);
+clip-path: polygon(43% 10%, 57% 0, 69% 100%, 54% 100%);
+border: 2px solid skyblue;
+    background-color: skyblue;
+    width: 34%;
+    height: 22%;
+    top:70%;
+    left: 12%;
+}
+
+#bun{
+    position: absolute;
+    border: 2px solid brown;
+    background-color: brown;
+    height: 7%;
+    width: 4%;
+    border-radius: 50%;
+    bottom: 49.5%;
+    left: 4.5%;
+    transform: rotate(-15deg);
+}
+#slive{
+    position: absolute;
+    border: 2px solid rgb(175, 227, 85);
+    background-color: rgb(175, 227, 85);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 9%;
+    width: 3%;
+    left: 14%;
+    bottom: 35%;
+    border-radius: 50% 50% 0% 0%;  
+    transform: rotate(-63deg);
+}
+#bicep{
+    position: absolute;
+    border: 2px solid #d7ba81;
+    background-color: #d7ba81;
+    width: 2%;
+    height: 5%;  
+    left: 18.5%;
+    bottom: 33.7%;
+    transform: rotate(-62deg);  
+}
+
+#hand{
+    position: absolute;
+    border: 2px solid #d7ba81;
+    background-color: #d7ba81;
+    width: 2%;
+    height: 8%;  
+    left:21%;
+    bottom: 33%;
+    transform: rotate(62deg);  
+    
+}
+
+#remote{
+    position: absolute;
+    background-color: black;
+    width: 2.2%;
+    height: 7%;  
+    left:25%;
+    bottom: 38%;
+    transform: rotate(40deg);
+    
+}
+#finger{
+    position: absolute;
+    border: 2px solid #d7ba81;
+    background-color: #d7ba81;
+    width: 3%;
+    height: 4%;  
+    left:23%;
+    bottom: 37%;
+    border-radius: 50%;
+}
+
+#signle{
+    position: absolute;
+    background-color: transparent;
+    width: 0.8%;
+    height: 1.2%;  
+    left:26.7%;
+    bottom: 42.5%;
+    border-radius: 50%;
+    animation: signlea 3s linear infinite;  
+    
+}
+@keyframes signlea{
+    0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: red;
+    }
+}
+#eye{
+    position: absolute;
+    background-color: black;
+    width: 5px;
+    height: 5px;  
+    left:14%;
+    bottom: 56%;
+    border-radius: 50%;  
+}
+
+#lips{
+    position: absolute;
+    border : 1px solid black;
+    border-top: none;
+    width: 10px;
+    height: 3px;  
+    left:14.9%;
+    bottom: 53%;
+    border-radius: 60%;
+    transform: rotate(-15deg);
+}
+
+#toes{
+    position: absolute;
+    /* border : 1px solid black; */
+    background-color: #d7ba81;
+    width: 7%;
+    height: 4.5%;  
+    border-radius: 30% 40% 40% 30%;
+    left: 30%;
+  bottom: 4%;
+}
+
+ 
+#chatone {
+    position: absolute;
+    left: 21%;
+    bottom: 74%;
+    width: 26%;
+    height: 20%;
+    background: white;
+    border-radius: 50px;
+    animation: chatonea 6s linear infinite;
+    
+  }
+  @keyframes chatonea{
+    0%{
+        background-color: transparent;
+       
+    }
+    50%{
+        background-color: transparent;
+        
+    }
+    100%{
+        background-color: white;
+    }
+  }
+  #text {
+    position: absolute;
+    left: 22%;
+    bottom: 67%;
+    width: 24%;
+    height: 19%;
+    border-radius: 50px;
+    visibility:hidden;
+    animation: texta 6s linear infinite;
+    
+}
+@keyframes texta{
+  0%{  
+      visibility: hidden;
+  }
+  50%{
+      
+      visibility: hidden;
+  }
+  100%{
+      visibility: visible;
+  }
+}
+ 
+    #chattwo{
+        position: absolute;
+        width: 4%;
+        height: 5%;
+        background-color: white;
+        border-radius: 50%;
+        left: 20%;
+        animation: chattwoa 6s linear infinite;
+    }
+    @keyframes chattwoa{
+      0%{
+          background-color: transparent;
+      }
+      50%{
+          background-color: white;
+      }
+      100%{
+          background-color: transparent;
+      }
+    }
+    #chatthree{
+        position: absolute;
+        width: 2%;
+        height: 3%;
+        background-color: white;
+        border-radius: 50%;
+        left: 18%;
+        bottom: 60%;
+        animation: chatthreea 6s linear infinite;
+    }
+    @keyframes chatthreea{
+      0%{
+          background-color: white;
+      }
+      50%{
+          background-color: white;
+      }
+      100%{
+          background-color: transparent;
+      }
+    }
+    
+
+    #stand{
+        position: absolute;
+        border: 3px solid black;
+        width: 17%;
+        right: 11%;
+        bottom: 40%;
+    }
+    #box{
+        position: absolute;
+        border: 1px solid black;
+        width: 14%;
+        height: 5%;
+        right: 12.5%;
+        bottom: 41%;
+        border-radius: 7px;
+        background-color: rgb(62, 56, 56);
+
+    }
+
+    #boxsignal{
+        position: absolute;
+        background-color: red;
+        width: 1%;
+        height: 1.5%;
+        right: 24%;
+        bottom: 42.5%;
+        border-radius: 50%;  
+        animation: boxsignlea 3s linear infinite;  
+    
+    }
+    @keyframes boxsignlea{
+        0%{
+            background-color: red;
+        }
+        50%{
+            background-color: red;
+        }
+        100%{
+            background-color: transparent;
+        }
+    }
+
+    #networkone{
+        position: absolute;
+        border:2px solid black ;
+        border-left: none;
+        border-bottom: none;
+        border-right: none;
+        border-radius: 50%;
+        height: 5%;
+        width: 3%;
+        top: 53.5%;
+        left: 26%;
+        transform: rotate(40deg);
+        animation: networkonea 6s linear infinite;
+    }
+
+    @keyframes networkonea{
+        0%{
+            border:2px solid black ;
+            border-left: none;
+        border-bottom: none;
+        border-right: none;
+           
+        }
+        50%{
+            border:2px solid black;
+            border-left: none;
+        border-bottom: none;
+        border-right: none;
+            
+        }
+        100%{
+            border:2px solid transparent ;
+            border-left: none;
+        border-bottom: none;
+        border-right: none;
+        }
+      }
+    
+    #networktwosi{
+        position: absolute;
+        border:2px solid transparent ;
+        border-left: none;
+        border-bottom: none;
+        border-right: none;
+        border-radius: 50%;
+        height: 5%;
+        width: 4%;
+        top: 51%;
+        left: 27%;
+        transform: rotate(43deg);
+        animation: networktwosia 6s linear infinite;
+    }
+
+    @keyframes networktwosia{
+        0%{
+            border:2px solid transparent ;
+            border-left: none;
+        border-bottom: none;
+        border-right: none;
+           
+        }
+        50%{
+            border:2px solid black;
+            border-left: none;
+        border-bottom: none;
+        border-right: none;
+            
+        }
+        100%{
+            border:2px solid black ;
+            border-left: none;
+        border-bottom: none;
+        border-right: none;
+        }
+      }
+    
+    #networkthree{
+        position: absolute;
+        border:2px solid transparent ;
+        border-left: none;
+        border-bottom: none;
+        border-right: none;
+        border-radius: 50%;
+        height: 7%;
+        width: 5%;
+        top: 48%;
+        left: 28%;
+        transform: rotate(45deg);
+        animation: networkthreea 6s linear infinite;
+    }
+
+    @keyframes networkthreea{
+        0%{
+            border:2px solid transparent ;
+            border-left: none;
+        border-bottom: none;
+        border-right: none;
+           
+        }
+        50%{
+            border:2px solid transparent ;
+            border-left: none;
+        border-bottom: none;
+        border-right: none;
+            
+        }
+        100%{
+            border:2px solid black ;
+            border-left: none;
+        border-bottom: none;
+        border-right: none;
+        }
+      }
